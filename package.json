@@ -1,0 +1,132 @@
+{
+  "name": "sjfontend",
+  "version": "1.0.1",
+  "description": "数建前端脚手架（react）",
+  "main": "index.js",
+  "homepage": "http://localhost:3000",
+  "proxy": "http://192.168.1.171:9080",
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-proposal-decorators": "^7.2.3",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@types/html-minifier": "^3.5.3",
+    "@types/react": "^16.9.16",
+    "@types/react-redux": "^7.1.5",
+    "@types/react-router-redux": "^5.0.18",
+    "@types/webpack": "^4.41.0",
+    "antd": "3.8.1",
+    "autoprefixer": "7.1.6",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-jest": "20.0.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^3.1.0",
+    "case-sensitive-paths-webpack-plugin": "^2.1.2",
+    "chalk": "1.1.3",
+    "classnames": "^2.2.5",
+    "css-loader": "^2.1.0",
+    "dotenv": "4.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
+    "fs-extra": "3.0.1",
+    "hash.js": "^1.1.7",
+    "history": "^4.7.2",
+    "html-webpack-plugin": "^4.0.0-beta.5",
+    "http-proxy-middleware": "^0.19.1",
+    "jest": "20.0.4",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "object-assign": "4.1.1",
+    "postcss-flexbugs-fixes": "3.2.0",
+    "postcss-loader": "^3.0.0",
+    "promise": "8.0.1",
+    "prop-types": "^15.5.10",
+    "raf": "3.4.0",
+    "react": "^16.12.0",
+    "react-app-rewired": "^1.3.4",
+    "react-dev-utils": "^7.0.1",
+    "react-dom": "^16.0.0",
+    "react-loadable": "^5.5.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.6",
+    "react-scripts": "^2.1.3",
+    "react-three": "0.9.7",
+    "three": "0.107.0",
+    "tween.js": "16.6.0",
+    "redux": "^3.7.2",
+    "style-loader": "0.19.0",
+    "sw-precache-webpack-plugin": "^0.11.4",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "url-loader": "0.6.2",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-manifest-plugin": "^2.0.4",
+    "whatwg-fetch": "2.0.3"
+  },
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,mjs}"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "mjs",
+      "js",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "no-undef": "off",
+      "no-restricted-globals": "off",
+      "no-unsed-vars": "off"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "author": "lwz",
+  "license": "ISC"
+}
